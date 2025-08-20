@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YOIKI GYOZA &amp; THAI TEA - Bio Link</title>
+  <meta name="description" content="Tautan cepat ke GoFood, GrabFood, dan ShopeeFood" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%2300bfa6'/><text x='50' y='58' font-size='52' text-anchor='middle' fill='white' font-family='Arial'>B</text></svg>">
+</head>
+<body>
+  <main class="container">
+    <header class="profile">
+      <div class="avatar" aria-hidden="true">
+        <!-- Placeholder avatar -->
+        <img src="assets/profile-placeholder.svg" alt="Foto profil" />
+      </div>
+      <h1 id="displayName">Nama Brand / Restoran</h1>
+      <p id="tagline">Tagline singkat atau deskripsi (contoh: "Pesan makanan favorit Anda di sini!")</p>
+    </header>
+
+    <section class="links" aria-label="Tautan pemesanan">
+      <a class="btn btn-gofood" href="#" target="_blank" rel="noopener" aria-label="Buka GoFood">
+        <span class="icon"><img src="assets/gofood-icon.jpg" alt="GoFood" /></span>
+        <span>Pesan di GoFood</span>
+      </a>
+      <a class="btn btn-grabfood" href="#" target="_blank" rel="noopener" aria-label="Buka GrabFood">
+        <span class="icon"><img src="assets/grabfood-icon.svg" alt="GrabFood" /></span>
+        <span>Pesan di GrabFood</span>
+      </a>
+      <a class="btn btn-shopee" href="#" target="_blank" rel="noopener" aria-label="Buka ShopeeFood">
+        <span class="icon"><img src="assets/shopeefood-icon.png" alt="ShopeeFood" /></span>
+        <span>Pesan di ShopeeFood</span>
+      </a>
+      <a class="btn btn-maps" href="#" target="_blank" rel="noopener" aria-label="Lihat di Google Maps">
+        <span class="icon"><img src="assets/google-maps-icon.svg" alt="Google Maps" /></span>
+        <span>Lokasi di Google Maps</span>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <button id="toggleTheme" class="theme-toggle" aria-pressed="false">Toggle tema</button>
+      <p class="note">Kirimkan nama, tagline, foto, dan URL GoFood/GrabFood/ShopeeFood Anda agar saya ganti placeholder ini.</p>
+    </footer>
+  </main>
+  <script>
+    window.APP_CONFIG = {
+      name: 'YOIKI GYOZA & THAI TEA',
+      tagline: 'Gyoza hangat, Thai Tea menyegarkan — pesan favoritmu di sini!',
+      avatar: 'assets/profile-placeholder.jpeg',
+      links: {
+        gofood: 'https://gofood.link/a/LptNZkS',
+        grabfood: 'https://r.grab.com/g/6-20241220_174003_62b13d4eedda4f9b84b0b5e929f7f145_MEXMPS-6-C6JWTTT2TBBVJX',
+        shopee: 'https://shopee.co.id/universal-link/now-food/shop/21925343?deep_and_deferred=1&shareChannel=whatsapp',
+        maps: '#'
+      }
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
